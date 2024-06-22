@@ -1,0 +1,26 @@
+﻿<Window x:Class="MedicalCenterFootball.WindowReportMassager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedicalCenterFootball"
+        mc:Ignorable="d"
+        Title="Очёт массажиста" Height="450" Width="650">
+
+    <Grid >
+        <DataGrid x:Name="DGridMassage" AutoGenerateColumns="False"  Height="209" VerticalAlignment="Center" IsReadOnly="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Отчёт" Binding="{Binding ReportID}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата сессии" Binding="{Binding SessionDate}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="ФИО игрока" Binding="{Binding PlayerName}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Продолжительность" Binding="{Binding Duration}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Замечания" Binding="{Binding Remarks}" Width="*"></DataGridTextColumn>
+                <DataGridTemplateColumn Width="auto">
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Экспорт" HorizontalAlignment="Center" Margin="0,335,0,0" VerticalAlignment="Top" Height="36" Width="96" Click="Button_Click"/>
+        <Button Content="Добавить задачу" HorizontalAlignment="Center" Margin="0,376,0,0" VerticalAlignment="Top" Height="38" Width="112" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,18 @@
+﻿<Window x:Class="MedicalCenterFootball.WindowDoctor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedicalCenterFootball"
+        mc:Ignorable="d"
+        Title="Окно главного врача" Height="450" Width="550">
+
+    <Grid >
+
+        <Button Content="Календарь" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,327,329"  Width="172" Height="37" Click="Button_Click_3"/>
+        <Button Content="Отчёт массажиста" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,38,329"   Width="160" Height="37" Click="Button_Click"/>
+        <Button Content="Отчёт физиотерапевта" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,327,142"   Width="172" Height="44" Click="Button_Click_2"/>
+        <Button Content="Отчёт реабилитолога" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,38,142"   Width="160" Height="44" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
